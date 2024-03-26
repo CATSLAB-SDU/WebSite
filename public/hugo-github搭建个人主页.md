@@ -889,7 +889,7 @@ jobs:
 
 ## 7 日常维护
 
-将相应的markdown文件放到content/posts目录下，在文件前面加入：
+拉取WebSite仓库，然后将相应的markdown文件放到content/posts目录下，在文件前面加入：
 
 ```powershell
 +++
