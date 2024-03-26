@@ -1,6 +1,6 @@
 +++
 title = "Hugo+Github 搭建个人主页"
-date = "2024-03-26T14:02:29+08:00"
+date = "2024-03-26T17:02:29+08:00"
 draft =false
 subtitle = ""
 tags = ["技能","网站"]
@@ -896,7 +896,7 @@ jobs:
 
 ## 7 日常维护
 
-将相应的markdown文件放到content/posts目录下，在文件前面加入：
+拉取WebSite仓库，然后将相应的markdown文件放到content/posts目录下，在文件前面加入：
 
 ```powershell
 +++
