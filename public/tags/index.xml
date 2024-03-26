@@ -1,0 +1,8 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Tag - </title>
+        <link>http://localhost:1313/tags.html</link>
+        <description>Tags - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>catslabsdu@gmail.com (CATS LAB)</managingEditor>
+            <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster><atom:link href="http://localhost:1313/tags.html" rel="self" type="application/rss+xml" /></channel>
+</rss>
