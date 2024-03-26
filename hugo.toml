@@ -612,7 +612,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 [outputFormats.MarkDown]
   mediaType = "text/plain"
   isPlainText = true
-  isHTML = false
+  isHTML = true
 
 # 用于 Hugo 输出文档的设置
 [outputs]
@@ -620,4 +620,4 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
+  taxonomyTerm = ["HTM"]
