@@ -889,7 +889,7 @@ jobs:
 
 ## 7 日常维护
 
-拉取WebSite仓库，然后将相应的markdown文件放到content/posts目录下，在文件前面加入：
+拉取WebSite仓库，然后将相应的markdown文件放到content/posts目录下，在文件前面加入，然后使用脚本转义。
 
 ```powershell
 +++
@@ -904,11 +904,11 @@ license = '<a rel="license external nofollow noopener noreferrer" href="https://
 
 ```
 
-。并执行根目录下的脚本文件run.sh即可。
+
 
 ‍
 
-## 8 日常维护
+## 8 图片处理
 
 markdown中的图片需要上传到网络图床。
 
