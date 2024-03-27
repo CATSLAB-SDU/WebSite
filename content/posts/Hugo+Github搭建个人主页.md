@@ -1,6 +1,6 @@
 +++
 title = "Hugo+Github搭建个人主页"
-date = "2024-03-27T10:31:57+8:00"
+date = "2024-03-27T10:31:57+08:00"
 draft = false
 subtitle = "网站维护"
 tags = [ "网站"]
