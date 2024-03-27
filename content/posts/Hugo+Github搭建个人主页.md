@@ -1,6 +1,6 @@
 +++
 title = "Hugo+Github搭建个人主页"
-date = "2024-03-27T10:14:42"
+date = "2024-03-27T10:14:42+8:00"
 subtitle = ""
 tags = ["笔记", "笔记1"]
 categories = ["方向"]
