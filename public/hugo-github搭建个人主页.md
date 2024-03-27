@@ -1,5 +1,4 @@
-# Hugo+Github 搭建个人主页
-
+# 
 
 ## 1 准备阶段
 
@@ -64,8 +63,8 @@ git clone https://github.com/dillonzq/LoveIt.git themes/LoveIt
 
 修改hugo.toml文件，建议使用vscode
 
-```toml
-baseURL = "https://CATSLAB-SDU.github.io"
+```cpp
+baseURL = "https://CATSLAB-SDU.github.io/"
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "LoveIt"
 
@@ -235,9 +234,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     #  是否在搜索索引中使用基于 baseURL 的绝对路径
     absoluteURL = false
     [params.search.algolia]
-      index = "blog"
-      appID = "MHT5MEZUE6"
-      searchKey = "462626f430ff595a97c125945eaac26d"
+      index = "CATSLAB"
+      appID = "9DJIN648JY"
+      searchKey = "e0475938b166cc32e8e52c7b0c3e6071"
 
   # 主页配置
   [params.home]
@@ -259,7 +258,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # 是否显示社交账号
       social = true
       #  免责声明 (支持 HTML 格式)
-      disclaimer = "内容为学习资料分享，仅供参考，侵权请联系删除。"
+      disclaimer = "内容为体系结构与隐私计算实验室学习资料分享，仅供参考，侵权请联系删除。"
     # 主页文章列表
     [params.home.posts]
       enable = true
@@ -344,7 +343,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     HackTheBox = ""
     RootMe= ""
     Phone = ""
-    Email = "yinxkai@gmail.com"
+    Email = "catslabsdu@gmail.com"
     RSS = false # 
 
   #  文章页面全局配置
@@ -387,7 +386,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #  默认行内定界符是 $ ... $ 和 \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
-      #  默认块定界符是 $$ ... $$, \[ ... \],  \begin{equation} ... \end{equation} 和一些其它的函数
+      #  默认块定界符是 <div>$$ ... $$</div>, \[ ... \],  \begin{equation} ... \end{equation} 和一些其它的函数
       blockLeftDelimiter = ""
       blockRightDelimiter = ""
       # KaTeX 插件 copy_tex
@@ -451,8 +450,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         enable = true
         owner = "CATSLAB-SDU"
         repo = "CATSLAB-SDU.github.io"
-        clientId = "cee9a7299c7ed214f720"
-        clientSecret = "b6b040a40001c2d2129236573ac7695d3fec20e3"
+        clientId = "61b42d1e8b1b0b63c612"
+        clientSecret = "e451062bb5e1c6cb0338b7aa471e352a8d18ebf1"
         id= "location.pathname" # 文章页面的链接地址就是ID
         labels= "gitalk" # Github issue labels. If you used to use Gitment, you can change it
         perPage= 15 # Pagination size, with maximum 100.
@@ -683,12 +682,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # 用于 Hugo 输出文档的设置
 [outputs]
-  # 
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTM本地启动，http://localhost:1313/ 查看效果
+  taxonomyTerm = ["HTML"]
 ```
 
 本地启动，http://localhost:1313/ 查看效果
@@ -699,7 +697,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 hugo server
 ```
 
-![image](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403261443241.png)
+​![image](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270911647.png)​
 
 ## 3 部署到Github
 
@@ -715,8 +713,9 @@ git remote add origin https://github.com/CATSLAB-SDU/CATSLAB-SDU.github.io.git
 git push -u origin main
 ```
 
-在github中进行配置  
-​![image](assets/image-20240326104411-81jsv9o.png)​
+在github中进行配置
+
+​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912394.png)​
 
 ## 4 自动部署
 
@@ -764,7 +763,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks-out your repository under $GITHUB\_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
@@ -784,9 +783,9 @@ jobs:
         run: hugo
 
       - name: Pushes to another repository
-        uses: cpina/github-action-push-to-another-repository@master
+        uses: cpina/github-action-push-to-another-repository@main
         env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          API\_TOKEN\_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: "public"
           destination-github-username: "CATSLAB-SDU"
@@ -797,11 +796,11 @@ jobs:
 
 在github中设置`Developer settings/Personal access tokens`​，新建一个密钥，权限设置把`Repo`​打勾。
 
-![image](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403261442618.png)​
+​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912848.png)​
 
 回到私人仓库的设置里，新建密钥，将刚才生成的个人密钥填进去，名字设为`API_TOKEN_GITHUB`​(跟 CI 脚本里的名称对应即可)
 
-![image](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403261442516.png)​
+​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912890.png)​
 
 完成该设置后更新私有库后公共库会自动更新。
 
@@ -815,7 +814,7 @@ jobs:
 
 ## 5 评论设置
 
-首先要去`Github -> Settings -> Developer Settings -> OAuth App`​ 里注册一个新的 OAuth App 来给 Gitalk 使用。并修改`config.toml`:
+首先要去`Github -> Settings -> Developer Settings -> OAuth App`​ 里注册一个新的 OAuth App 来给 Gitalk 使用。并修改`config.toml`​:
 
 ```powershell
  [params.page.comment]
@@ -828,13 +827,13 @@ jobs:
         clientSecret = "" <-- 申请好的OAuth的ClientSecret
 ```
 
-![image](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403261442238.png)​
+​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912115.png)​
 
 ## 6 搜索设置
 
-在[AI search that understands | Algolia](https://www.algolia.com/)创建账号,创建一个`application`​与`index`:
+在[AI search that understands | Algolia](https://www.algolia.com/)创建账号,创建一个`application`​与`index`​:
 
-![image](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403261442779.png)​
+​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912311.png)​
 
 然后将下面的内容填写到`config.toml`​中：
 
@@ -863,7 +862,7 @@ jobs:
 
 ```
 
-![image](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403261442164.png)​
+​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912375.png)​
 
 ‍
 
@@ -889,7 +888,18 @@ jobs:
 
 ## 7 日常维护
 
-拉取WebSite仓库，然后将相应的markdown文件放到content/posts目录下，在文件前面加入，然后使用脚本转义。
+登录github账号：
+
+```powershell
+user：catslabsdu@gmail.com
+password：catlab200.
+```
+
+在website仓库加入添加自己的github为协作账号，并在自己github账号绑定的邮件中同意。
+
+​![](http://127.0.0.1:6806/assets/image-20240327093934-sj4oj09.png)​
+
+clone website仓库，将相应的markdown文件放到content/posts目录下，在文件前面加入，修改markdown.py中的文件名，执行python脚本进行字符转义。
 
 ```powershell
 +++
@@ -904,15 +914,27 @@ license = '<a rel="license external nofollow noopener noreferrer" href="https://
 
 ```
 
+python转义主要是为了兼容数学公式,下面是一个示​例$idf\*$​：
 
+<div>$$
+\begin{align*}
+\omega_{R\cdot C}^{(k_{r}+k_{c}\cdot R)(i_{r}\cdot C+i_{c})}&=\omega_{R\cdot C}^{i_{c}k_{r}+i_{c}k_{c}\cdot R+i_{r}k_{r}\cdot C+i_{r}k_{c}\cdot RC} \\&=\omega_{R\cdot C}^{i_{c}k_{r}}\cdot \omega_{R\cdot C}^{i_{c}k_{c}\cdot R}\cdot \omega_{R\cdot C}^{i_{r}k_{r}\cdot C}\cdot \omega_{R\cdot C}^{i_{r}k_{c}\cdot RC}
+\end{align*}
+$$</div>
 
-‍
+返回website根目录执行：
+
+```powershell
+hugo 
+
+git add .
+git commit -m "添加文件"
+git push -u origin main
+```
 
 ## 8 图片处理
 
-markdown中的图片需要上传到网络图床。
-
-下载PicGo这里推荐山东大学的镜像网站：[v2.3.1 (sdu.edu.cn)](https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo/v2.3.1/)
+markdown中的图片需要上传到网络图床。下载PicGo这里推荐山东大学的镜像网站：[v2.3.1 (sdu.edu.cn)](https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo/v2.3.1/)
 
 进行图床设置：
 
@@ -928,7 +950,7 @@ token：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
 自定义域名：https://cdn.jsdelivr.net/gh/CATSLAB-SDU/ImageBed@main
 ```
 
-![image](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403261442541.png)​
+​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912813.png)​
 
-‍
+##
 
