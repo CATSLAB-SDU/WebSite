@@ -1,3 +1,13 @@
++++
+title = "Hugo+Github搭建个人主页"
+date = "2024-03-27T10:01:51"
+draft = false
+subtitle = ""
+tags = ["笔记", "笔记1"]
+categories = ["方向"]
+license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
++++
+
 ## 1 准备阶段
 
 ### 1.1 安装hugo
@@ -695,7 +705,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 hugo server
 ```
 
-​![image](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270911647.png)​
+![image](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270911647.png)​
 
 ## 3 部署到Github
 
@@ -713,7 +723,7 @@ git push -u origin main
 
 在github中进行配置
 
-​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912394.png)​
+![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912394.png)​
 
 ## 4 自动部署
 
@@ -794,11 +804,11 @@ jobs:
 
 在github中设置`Developer settings/Personal access tokens`​，新建一个密钥，权限设置把`Repo`​打勾。
 
-​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912848.png)​
+![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912848.png)​
 
 回到私人仓库的设置里，新建密钥，将刚才生成的个人密钥填进去，名字设为`API_TOKEN_GITHUB`​(跟 CI 脚本里的名称对应即可)
 
-​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912890.png)​
+![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912890.png)​
 
 完成该设置后更新私有库后公共库会自动更新。
 
@@ -812,7 +822,7 @@ jobs:
 
 ## 5 评论设置
 
-首先要去`Github -> Settings -> Developer Settings -> OAuth App`​ 里注册一个新的 OAuth App 来给 Gitalk 使用。并修改`config.toml`​:
+首先要去`Github -> Settings -> Developer Settings -> OAuth App`​ 里注册一个新的 OAuth App 来给 Gitalk 使用。并修改`config.toml`:
 
 ```powershell
  [params.page.comment]
@@ -825,13 +835,13 @@ jobs:
         clientSecret = "" <-- 申请好的OAuth的ClientSecret
 ```
 
-​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912115.png)​
+![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912115.png)​
 
 ## 6 搜索设置
 
-在[AI search that understands | Algolia](https://www.algolia.com/)创建账号,创建一个`application`​与`index`​:
+在[AI search that understands | Algolia](https://www.algolia.com/)创建账号,创建一个`application`​与`index`:
 
-​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912311.png)​
+![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912311.png)​
 
 然后将下面的内容填写到`config.toml`​中：
 
@@ -860,7 +870,7 @@ jobs:
 
 ```
 
-​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912375.png)​
+![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912375.png)​
 
 ‍
 
@@ -895,25 +905,13 @@ password：catlab200.
 
 在website仓库加入添加自己的github为协作账号，并在自己github账号绑定的邮件中同意。
 
-​![](http://127.0.0.1:6806/assets/image-20240327093934-sj4oj09.png)​
+![](http://127.0.0.1:6806/assets/image-20240327093934-sj4oj09.png)​
 
-clone website仓库，将相应的markdown文件放到content/posts目录下，在文件前面加入，修改markdown.py中的文件名，执行python脚本进行字符转义。
+clone website仓库，将相应的markdown文件放到content/posts目录下，修改markdown.py中的文件名，执行python脚本进行字符转义。
 
-```powershell
-+++
-title = "title"
-date = "2024-03-06T16:02:29+08:00"
-draft = fasle
-subtitle = ""
-tags = ["笔记1","笔记1"]
-categories = ["方向"]
-license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-+++
+python转义主要是为了兼容数学公式,下面是一个示​例$idf\*$​​：
 
-```
-
-python转义主要是为了兼容数学公式,下面是一个示​例$idf\*$​：
-
+$a\_1+a\_2\*\*s\^2\*\*$
 <div>$$
 \begin{align*}
 \omega_{R\cdot C}^{(k_{r}+k_{c}\cdot R)(i_{r}\cdot C+i_{c})}&=\omega_{R\cdot C}^{i_{c}k_{r}+i_{c}k_{c}\cdot R+i_{r}k_{r}\cdot C+i_{r}k_{c}\cdot RC} \\&=\omega_{R\cdot C}^{i_{c}k_{r}}\cdot \omega_{R\cdot C}^{i_{c}k_{c}\cdot R}\cdot \omega_{R\cdot C}^{i_{r}k_{r}\cdot C}\cdot \omega_{R\cdot C}^{i_{r}k_{c}\cdot RC}
@@ -948,6 +946,6 @@ token：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
 自定义域名：https://cdn.jsdelivr.net/gh/CATSLAB-SDU/ImageBed@main
 ```
 
-​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912813.png)​
+![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912813.png)​
 
 ##

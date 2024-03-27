@@ -1,20 +1,38 @@
 import re
 import os
+import glob
+from datetime import datetime
 
-def process_math_expressions(md_file_name):
-    # 获取脚本文件所在的目录
-    script_directory = os.path.dirname(os.path.abspath(__file__))
-    # 构建 Markdown 文件的完整路径
-    md_file_path = os.path.join(script_directory, md_file_name)
+def process_math_expressions(md_file_path):
+    # 使用文件名（不含扩展名）作为文章标题
+    title = os.path.splitext(os.path.basename(md_file_path))[0]
+    # 获取当前时间，格式化为ISO 8601格式
+    current_time = datetime.now().strftime("%Y-%m-%dT%H:%M:%S%z")
+    
+    # 构建要添加的元数据字符串
+    metadata = f"""+++
+title = "{title}"
+date = "{current_time}"
+draft = false
+subtitle = ""
+tags = ["笔记", "笔记1"]
+categories = ["方向"]
+license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
++++
+
+"""
     
     # 读取 Markdown 文件
     with open(md_file_path, 'r', encoding='utf-8') as file:
         content = file.read()
     
     # 检查是否已经处理过
-    if '<div>$$' in content or '/_' in content:
-        print(f"警告：文件 {md_file_path} 似乎已经被处理过。跳过以避免二次转换。")
+    if content.startswith('+++'):
+        print(f"警告：文件 {md_file_path} 似乎已经包含元数据。跳过以避免二次添加。")
         return
+    
+    # 在文件内容前添加元数据
+    content = metadata + content
     
     # 删除$$...$$中的空行
     def remove_empty_lines(match):
@@ -27,7 +45,6 @@ def process_math_expressions(md_file_name):
     
     # 转义$...$格式中的_, *, 和^
     def escape_characters(match):
-        # Only escape _, *, and ^ that are not already escaped
         escaped_content = re.sub(r'(?<!\\)_', r'\_', match.group(0))
         escaped_content = re.sub(r'(?<!\\)\*', r'\*', escaped_content)
         escaped_content = re.sub(r'(?<!\\)\^', r'\^', escaped_content)
@@ -40,6 +57,14 @@ def process_math_expressions(md_file_name):
         file.write(content)
     print(f"处理完成：文件 {md_file_path} 已更新。")
 
-# 示例用法，文件名直接提供，无需路径
-md_file_name = 'Hugo+Github搭建个人主页.md' # 你的 Markdown 文件名称
-process_math_expressions(md_file_name)
+def process_all_md_files():
+    # 获取脚本文件所在的目录
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+    # 查找目录下的所有.md文件
+    md_files = glob.glob(os.path.join(script_directory, '*.md'))
+    
+    for md_file_path in md_files:
+        process_math_expressions(md_file_path)
+
+if __name__ == "__main__":
+    process_all_md_files()
