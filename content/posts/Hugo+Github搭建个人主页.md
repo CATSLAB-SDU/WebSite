@@ -1,14 +1,6 @@
-+++
-title = "Hugo+Github搭建个人主页"
-date = "2024-03-27T10:01:51"
-draft = false
-subtitle = ""
-tags = ["笔记", "笔记1"]
-categories = ["方向"]
-license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-+++
 
-## 1 准备阶段
+
+##1 准备阶段
 
 ### 1.1 安装hugo
 
@@ -394,7 +386,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #  默认行内定界符是 $ ... $ 和 \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
-      #  默认块定界符是 <div>$$ ... $$</div>, \[ ... \],  \begin{equation} ... \end{equation} 和一些其它的函数
+      #  默认块定界符是 $$ ... $$, \[ ... \],  \begin{equation} ... \end{equation} 和一些其它的函数
       blockLeftDelimiter = ""
       blockRightDelimiter = ""
       # KaTeX 插件 copy_tex
@@ -771,7 +763,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB\_WORKSPACE, so your job can access it
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
@@ -793,7 +785,7 @@ jobs:
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          API\_TOKEN\_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: "public"
           destination-github-username: "CATSLAB-SDU"
@@ -909,14 +901,13 @@ password：catlab200.
 
 clone website仓库，将相应的markdown文件放到content/posts目录下，修改markdown.py中的文件名，执行python脚本进行字符转义。
 
-python转义主要是为了兼容数学公式,下面是一个示​例$idf\*$​​：
+python转义主要是为了兼容数学公式,下面是一个示​例$idf*$​：
 
-$a\_1+a\_2\*\*s\^2\*\*$
-<div>$$
+$$
 \begin{align*}
 \omega_{R\cdot C}^{(k_{r}+k_{c}\cdot R)(i_{r}\cdot C+i_{c})}&=\omega_{R\cdot C}^{i_{c}k_{r}+i_{c}k_{c}\cdot R+i_{r}k_{r}\cdot C+i_{r}k_{c}\cdot RC} \\&=\omega_{R\cdot C}^{i_{c}k_{r}}\cdot \omega_{R\cdot C}^{i_{c}k_{c}\cdot R}\cdot \omega_{R\cdot C}^{i_{r}k_{r}\cdot C}\cdot \omega_{R\cdot C}^{i_{r}k_{c}\cdot RC}
 \end{align*}
-$$</div>
+$$
 
 返回website根目录执行：
 

@@ -4,7 +4,15 @@
         <link>https://CATSLAB-SDU.github.io/</link>
         <description>实验室学习资料共享博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>catslabsdu@gmail.com (CATS LAB)</managingEditor>
-            <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster><lastBuildDate>Wed, 27 Mar 2024 10:01:51 &#43;0000</lastBuildDate>
+            <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster>
             <atom:link href="https://CATSLAB-SDU.github.io/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title></title>
+    <link>https://CATSLAB-SDU.github.io/hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5.html</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>CATS LAB</author>
+    <guid>https://CATSLAB-SDU.github.io/hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5.html</guid>
+    <description><![CDATA[##1 准备阶段 1.1 安装hugo 这里为了省去环境路径的配置采用如下的cmd命令方式，也可以选择去github下载相应文件。如文档：Hugo中文文档 (gohugo.org)]]></description>
+</item>
+</channel>
 </rss>
