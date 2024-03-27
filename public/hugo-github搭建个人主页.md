@@ -2,8 +2,6 @@
 
 
 
-
-
 ## 1 准备阶段
 
 ### 1.1 安装hugo
@@ -901,9 +899,24 @@ password：catlab200.
 
 在website仓库加入添加自己的github为协作账号，并在自己github账号绑定的邮件中同意。
 
-![](http://127.0.0.1:6806/assets/image-20240327093934-sj4oj09.png)​
+![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270939957.png)​
 
-clone website仓库，将相应的markdown文件放到content/posts目录下，修改markdown.py中的文件名，执行python脚本进行字符转义。
+‍
+
+clone website仓库，将相应的markdown文件放到content/posts目录下，在文件前面加入，修改markdown.py中的文件名，执行python脚本进行字符转义。
+
+```powershell
++++
+title = "title"
+date = "2024-03-06T16:02:29+08:00"
+draft = false
+subtitle = ""
+tags = ["笔记1","笔记1"]
+categories = ["方向"]
+license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
++++
+
+```
 
 python转义主要是为了兼容数学公式,下面是一个示​例$idf\*$​：
 
