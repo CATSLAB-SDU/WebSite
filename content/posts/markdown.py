@@ -12,14 +12,13 @@ def process_math_expressions(md_file_path):
     # 构建要添加的元数据字符串
     metadata = f"""+++
 title = "{title}"
-date = "{current_time}"
+date = "{current_time}+8:00"
 draft = false
 subtitle = ""
 tags = ["笔记", "笔记1"]
 categories = ["方向"]
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 +++
-
 """
     
     # 读取 Markdown 文件

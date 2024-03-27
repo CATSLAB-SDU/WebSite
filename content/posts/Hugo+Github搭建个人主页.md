@@ -2,13 +2,14 @@
 title = "Hugo+Github搭建个人主页"
 date = "2024-03-27T10:14:42+8:00"
 subtitle = ""
+draft = false
 tags = ["笔记", "笔记1"]
 categories = ["方向"]
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-
 +++
 
- 
+
+
 
 ## 1 准备阶段
 
