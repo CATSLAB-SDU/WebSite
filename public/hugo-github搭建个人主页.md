@@ -956,3 +956,7 @@ token：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
 
 ![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403270912813.png)​
 
+## 9 PDF处理
+
+先给自己在pdf仓库添加协作，然后将文档上传到PDF库中即可，然后更新网站中相应的markdown将链接写进去即可。
+
