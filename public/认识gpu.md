@@ -176,7 +176,7 @@ ROP（Raster Operations Pipeline）：光栅操作单元，负责将光栅化引
 
 ![Maxwell  电路示意图](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061549614.jpg "Maxwell 电路示意图")
 
-![Maxwell架构](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061549757.png%20 "Maxwell架构")
+![Maxwell架构](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061549757.png "Maxwell架构")
 
 ![Maxwll SMM示意图](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061545780.png "Maxwll SMM示意图")
 
@@ -206,9 +206,9 @@ Kepler架构的SMX过于庞杂，因此Maxwwll 的SMM砍掉了很多元件，将
 
 #### 2.2.7 Ampere 安培架构
 
-![Ampere 架构图](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061552794.png%20 "Ampere 架构图")
+![Ampere 架构图](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061552794.png "Ampere 架构图")
 
-![Ampere SM结构](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061552558.png%20 "Ampere SM结构")
+![Ampere SM结构](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061552558.png "Ampere SM结构")
 
 增加了FP64单元，Tensor Core变为原来的一半，但是计算能力其实增强了，单个时钟周期吞吐量量提高了，同时引入了结构化稀疏能力。增加了多实例GPU（Multi-Instance GPU），将单个A100GPU划分为多达七个独立GPU，为不同任务提供不同算力。
 
@@ -243,7 +243,7 @@ Kepler架构的SMX过于庞杂，因此Maxwwll 的SMM砍掉了很多元件，将
 
 引入了线程块簇，簇是一组保证可以并发调度的线程块，支持跨多个 SM 的线程进行高效协作和数据共享。簇还可以更高效地协同驱动Tensor 内存加速器和 Tensor Core 等异步单元。在物理层次上对应的是GPC,可以直接访问同簇内其他SM的共享内存而不用经过显存中转。
 
-![线程层次](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061546643.png%20 "线程层次")![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061553946.png)​
+![线程层次](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061546643.png "线程层次")![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061553946.png)​
 
 ### 2.3 TensorCore
 
