@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>GPU 架构 - Tag - </title>
+        <link>https://CATSLAB-SDU.github.io/tags/gpu-%E6%9E%B6%E6%9E%84.html</link>
+        <description>GPU 架构 - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>catslabsdu@gmail.com (CATS LAB)</managingEditor>
+            <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster><lastBuildDate>Thu, 28 Mar 2024 15:23:01 &#43;0800</lastBuildDate><atom:link href="https://CATSLAB-SDU.github.io/tags/gpu-%E6%9E%B6%E6%9E%84.html" rel="self" type="application/rss+xml" /><item>
+    <title>认识GPU</title>
+    <link>https://CATSLAB-SDU.github.io/%E8%AE%A4%E8%AF%86gpu.html</link>
+    <pubDate>Thu, 28 Mar 2024 15:23:01 &#43;0800</pubDate>
+    <author>CATS LAB</author>
+    <guid>https://CATSLAB-SDU.github.io/%E8%AE%A4%E8%AF%86gpu.html</guid>
+    <description><![CDATA[1 GPU简单介绍 GPU(Graphics Processing Unit)也叫做图形处理单元，是一种专用电子电路，最初设计使用来加速计算机图形处理，但后续因其并行结构非常适合与并行计算]]></description>
+</item>
+</channel>
+</rss>

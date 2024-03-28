@@ -4,9 +4,41 @@
         <link>https://CATSLAB-SDU.github.io/</link>
         <description>实验室学习资料共享博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>catslabsdu@gmail.com (CATS LAB)</managingEditor>
-            <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster><lastBuildDate>Wed, 27 Mar 2024 10:31:57 &#43;0800</lastBuildDate>
+            <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster><lastBuildDate>Thu, 28 Mar 2024 15:31:34 &#43;0800</lastBuildDate>
             <atom:link href="https://CATSLAB-SDU.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>ZKP资料目录</title>
+    <link>https://CATSLAB-SDU.github.io/zkp%E8%B5%84%E6%96%99%E7%9B%AE%E5%BD%95.html</link>
+    <pubDate>Thu, 28 Mar 2024 15:31:34 &#43;0800</pubDate>
+    <author>CATS LAB</author>
+    <guid>https://CATSLAB-SDU.github.io/zkp%E8%B5%84%E6%96%99%E7%9B%AE%E5%BD%95.html</guid>
+    <description><![CDATA[[证明、论证与零知识] Proofs, Arguments, and Zero-Knowledge.pdf Why and How zk-SNARK Works Definitive Explanation.pdf 简洁非交互零知识证明综述.pdf]]></description>
+</item>
+<item>
+    <title>连接GitHub</title>
+    <link>https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html</link>
+    <pubDate>Thu, 28 Mar 2024 15:31:34 &#43;0800</pubDate>
+    <author>CATS LAB</author>
+    <guid>https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html</guid>
+    <description><![CDATA[连接GitHub HTTP 访问不了主要是DNS被污染了，在本机DNS即可。打开如下文件将下面的内容后缀在文件中即可，修改需要管理员权限，确保自己真的]]></description>
+</item>
+<item>
+    <title>NTT（快速数论变换）</title>
+    <link>https://CATSLAB-SDU.github.io/ntt%E5%BF%AB%E9%80%9F%E6%95%B0%E8%AE%BA%E5%8F%98%E6%8D%A2.html</link>
+    <pubDate>Thu, 28 Mar 2024 15:23:01 &#43;0800</pubDate>
+    <author>CATS LAB</author>
+    <guid>https://CATSLAB-SDU.github.io/ntt%E5%BF%AB%E9%80%9F%E6%95%B0%E8%AE%BA%E5%8F%98%E6%8D%A2.html</guid>
+    <description><![CDATA[NTT（快速数论变换） 1 算法介绍 1.1 多项式乘法引入 1.1.1 多项式的两种表示方法 一般 $n$ 次多项式如公式（1）所示。多项式具有两种表示方法分别是系数表示法]]></description>
+</item>
+<item>
+    <title>认识GPU</title>
+    <link>https://CATSLAB-SDU.github.io/%E8%AE%A4%E8%AF%86gpu.html</link>
+    <pubDate>Thu, 28 Mar 2024 15:23:01 &#43;0800</pubDate>
+    <author>CATS LAB</author>
+    <guid>https://CATSLAB-SDU.github.io/%E8%AE%A4%E8%AF%86gpu.html</guid>
+    <description><![CDATA[1 GPU简单介绍 GPU(Graphics Processing Unit)也叫做图形处理单元，是一种专用电子电路，最初设计使用来加速计算机图形处理，但后续因其并行结构非常适合与并行计算]]></description>
+</item>
+<item>
     <title>Hugo&#43;Github搭建个人主页</title>
     <link>https://CATSLAB-SDU.github.io/hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5.html</link>
     <pubDate>Wed, 27 Mar 2024 10:31:57 &#43;0800</pubDate>

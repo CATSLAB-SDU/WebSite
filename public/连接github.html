@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>连接GitHub - </title><meta name="Description" content="实验室学习资料共享博客"><meta property="og:title" content="连接GitHub" />
+<meta property="og:description" content="连接GitHub HTTP 访问不了主要是DNS被污染了，在本机DNS即可。打开如下文件将下面的内容后缀在文件中即可，修改需要管理员权限，确保自己真的" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-28T15:31:34+08:00" />
+<meta property="article:modified_time" content="2024-03-28T15:31:34+08:00" /><meta property="og:site_name" content="CATS LAB" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="连接GitHub"/>
+<meta name="twitter:description" content="连接GitHub HTTP 访问不了主要是DNS被污染了，在本机DNS即可。打开如下文件将下面的内容后缀在文件中即可，修改需要管理员权限，确保自己真的"/>
+<meta name="application-name" content="CATS LAB">
+<meta name="apple-mobile-web-app-title" content="CATS LAB"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html" /><link rel="prev" href="https://CATSLAB-SDU.github.io/ntt%E5%BF%AB%E9%80%9F%E6%95%B0%E8%AE%BA%E5%8F%98%E6%8D%A2.html" /><link rel="next" href="https://CATSLAB-SDU.github.io/zkp%E8%B5%84%E6%96%99%E7%9B%AE%E5%BD%95.html" /><link rel="stylesheet" href="/css/style.min.cf6878db51c51b2d04ae155284a4403dbee8db33e16c066f954c95279c271fcd.css" integrity="sha256-z2h421HFGy0ErhVShKRAPb7o2zPhbAZvlUyVJ5wnH80="><link rel="preload" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.f0c7b8d85cf716a020ea19fac22314de48452bc98568517fabdb0ca99ce66930.css" integrity="sha256-8Me42Fz3FqAg6hn6wiMU3khFK8mFaFF/q9sMqZzmaTA="></noscript><link rel="preload" href="/lib/animate/animate.min.a61e123314188bd0453320008e01b4bbb665bee09039f4cbd9bef44de410ce67.css" integrity="sha256-ph4SMxQYi9BFMyAAjgG0u7ZlvuCQOfTL2b70TeQQzmc=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.a61e123314188bd0453320008e01b4bbb665bee09039f4cbd9bef44de410ce67.css" integrity="sha256-ph4SMxQYi9BFMyAAjgG0u7ZlvuCQOfTL2b70TeQQzmc="></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "连接GitHub",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/CATSLAB-SDU.github.io\/%E8%BF%9E%E6%8E%A5github.html"
+        },"image": ["https:\/\/CATSLAB-SDU.github.io\/favicon-32x32.png"],"genre": "posts","keywords": "笔记, 笔记1","wordcount":  567 ,
+        "url": "https:\/\/CATSLAB-SDU.github.io\/%E8%BF%9E%E6%8E%A5github.html","datePublished": "2024-03-28T15:31:34+08:00","dateModified": "2024-03-28T15:31:34+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "CATS LAB"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title=""><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/favicon.ico"
+        data-srcset="/favicon.ico, /favicon.ico 1.5x, /favicon.ico 2x"
+        data-sizes="auto"
+        alt="/favicon.ico"
+        title="/favicon.ico" />CATS LAB</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts.html"> 笔记 </a><a class="menu-item" href="/tags.html"> 标签 </a><a class="menu-item" href="/categories.html"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title=""><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/favicon.ico"
+        data-srcset="/favicon.ico, /favicon.ico 1.5x, /favicon.ico 2x"
+        data-sizes="auto"
+        alt="/favicon.ico"
+        title="/favicon.ico" />CATS LAB</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts.html" title="">笔记</a><a class="menu-item" href="/tags.html" title="">标签</a><a class="menu-item" href="/categories.html" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">连接GitHub</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>CATS LAB</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E6%96%B9%E5%90%91.html"><i class="far fa-folder fa-fw" aria-hidden="true"></i>方向</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-03-28">2024-03-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;567 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#http">HTTP</a></li>
+    <li><a href="#ssh">SSH</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="连接github">连接GitHub</h1>
+<h2 id="http">HTTP</h2>
+<p>访问不了主要是DNS被污染了，在本机DNS即可。打开如下文件将下面的内容后缀在文件中即可，修改需要管理员权限，确保自己真的修改成功了<code>C:\Windows\System32\drivers\etc\hosts</code>​。在 CMD 窗口输入：<code>ipconfig /flushdns</code>​</p>
+<p>下面的内容可以在下面的网站中找到最新的：</p>
+<p><a href="https://gitee.com/frankwuzp/github-host/blob/main/hosts" target="_blank" rel="noopener noreffer ">hosts · frankwuzp/github-host - Gitee.com</a></p>
+<p><a href="https://github.com/maxiaof/github-hosts" target="_blank" rel="noopener noreffer ">maxiaof/github-hosts: 通过修改Hosts解决国内Github经常抽风访问不到,每日更新</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1">#Github Hosts Start</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#Project Address: https://github.com/maxiaof/github-hosts</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#Update URL: https://raw.githubusercontent.com/maxiaof/github-hosts/master/hosts</span>
+</span></span><span class="line"><span class="cl">151.101.129.194	github.global.ssl.fastly.net
+</span></span><span class="line"><span class="cl">185.199.109.153	assets-cdn.github.com
+</span></span><span class="line"><span class="cl">185.199.108.153	documentcloud.github.com
+</span></span><span class="line"><span class="cl">140.82.112.3	gist.github.com
+</span></span><span class="line"><span class="cl">185.199.109.133	gist.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.108.154	github.githubassets.com
+</span></span><span class="line"><span class="cl">140.82.112.18	help.github.com
+</span></span><span class="line"><span class="cl">140.82.114.9	nodeload.github.com
+</span></span><span class="line"><span class="cl">185.199.109.133	raw.github.com
+</span></span><span class="line"><span class="cl">140.82.112.17	status.github.com
+</span></span><span class="line"><span class="cl">185.199.111.153	training.github.com
+</span></span><span class="line"><span class="cl">185.199.109.133	avatars.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.109.133	avatars0.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.109.133	avatars1.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.108.133	avatars2.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.111.133	avatars3.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.110.133	avatars4.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.111.133	avatars5.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.109.133	avatars6.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.109.133	avatars7.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.111.133	avatars8.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.109.133	favicons.githubusercontent.com
+</span></span><span class="line"><span class="cl">140.82.114.9	codeload.github.com
+</span></span><span class="line"><span class="cl">52.217.116.57	github-cloud.s3.amazonaws.com
+</span></span><span class="line"><span class="cl">52.216.48.177	github-com.s3.amazonaws.com
+</span></span><span class="line"><span class="cl">3.5.25.27	github-production-release-asset-2e65be.s3.amazonaws.com
+</span></span><span class="line"><span class="cl">52.216.221.89	github-production-user-asset-6210df.s3.amazonaws.com
+</span></span><span class="line"><span class="cl">3.5.29.126	github-production-repository-file-5c1aeb.s3.amazonaws.com
+</span></span><span class="line"><span class="cl">185.199.111.153	githubstatus.com
+</span></span><span class="line"><span class="cl">140.82.114.18	github.community
+</span></span><span class="line"><span class="cl">185.199.110.133	media.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.109.133	camo.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.110.133	raw.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.109.133	cloud.githubusercontent.com
+</span></span><span class="line"><span class="cl">185.199.110.133	user-images.githubusercontent.com
+</span></span><span class="line"><span class="cl">2606:50c0:8003::153	customer-stories-feed.github.com
+</span></span><span class="line"><span class="cl">185.199.108.153	pages.github.com
+</span></span><span class="line"><span class="cl">140.82.112.5	api.github.com
+</span></span><span class="line"><span class="cl">140.82.114.26	live.github.com
+</span></span><span class="line"><span class="cl">140.82.112.30	githubapp.com
+</span></span><span class="line"><span class="cl">140.82.113.3	github.com
+</span></span><span class="line"><span class="cl">52.224.38.193	github.dev
+</span></span><span class="line"><span class="cl">140.82.112.21	central.github.com
+</span></span><span class="line"><span class="cl">140.82.113.25	alive.github.com
+</span></span><span class="line"><span class="cl">185.199.111.133	desktop.githubusercontent.com
+</span></span><span class="line"><span class="cl"><span class="c1">#Github Hosts End</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="ssh">SSH</h2>
+<p>命令行中输入如下指令。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">ssh-keygen -t rsa -C <span class="s2">&#34;your_email@example.com&#34;</span>
+</span></span><span class="line"><span class="cl">#github注册账号的邮箱，其他的不知道可不可以
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>去用户目录（C:\Users\用户）下找到.ssh目录，没有该目录，设置显示隐藏目录，在.ssh目录下找到id_rsa.pub，前往GitHub，创建一个SSH keys，把id_rsa.pub复制过来就可以。</p>
+<p>​<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530899.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530899.png, https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530899.png 1.5x, https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530899.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530899.png"
+        title="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530899.png" /><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530228.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530228.png, https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530228.png 1.5x, https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530228.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530228.png"
+        title="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530228.png" />​</p>
+<p>将下面内容添加到.ssh/config中,如果没有可以自己创建一个。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">Host github.com
+</span></span><span class="line"><span class="cl">    User git
+</span></span><span class="line"><span class="cl">    Hostname ssh.github.com
+</span></span><span class="line"><span class="cl">    PreferredAuthentications publickey
+</span></span><span class="line"><span class="cl">    IdentityFile ~/.ssh/id_rsa
+</span></span><span class="line"><span class="cl">    Port 443
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在cmd中输入，验证。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">ssh -T git@github.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>‍</p>
+<p>‍</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-03-28</span>
+            </div><div class="post-info-license">
+                <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/%E8%BF%9E%E6%8E%A5github.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html" data-title="连接GitHub" data-hashtags="笔记,笔记1"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html" data-hashtag="笔记"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html" data-title="连接GitHub"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html" data-title="连接GitHub"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html" data-title="连接GitHub"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E7%AC%94%E8%AE%B0.html">笔记</a>,&nbsp;<a href="/tags/%E7%AC%94%E8%AE%B01.html">笔记1</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();"></a></span>&nbsp;|&nbsp;<span><a href="/"></a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ntt%E5%BF%AB%E9%80%9F%E6%95%B0%E8%AE%BA%E5%8F%98%E6%8D%A2.html" class="prev" rel="prev" title="NTT（快速数论变换）"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>NTT（快速数论变换）</a>
+            <a href="/zkp%E8%B5%84%E6%96%99%E7%9B%AE%E5%BD%95.html" class="next" rel="next" title="ZKP资料目录">ZKP资料目录<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.123.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">CATS LAB</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/gitalk/gitalk.min.e1f973627089fc121272c24d146e7c52e316a203fcb362eb2f648d803fc0d327.css" integrity="sha256-4flzYnCJ/BIScsJNFG58UuMWogP8s2LrL2SNgD/A0yc="><link rel="stylesheet" href="/lib/katex/katex.min.76e39bd605d45b2d1944123c66608b0c8bb9baeb70720b212571531c7cf9bc2a.css" integrity="sha256-duOb1gXUWy0ZRBI8ZmCLDIu5uutwcgshJXFTHHz5vCo="><script type="text/javascript" src="/lib/gitalk/gitalk.min.f4eb3070a07836baccf2b8f9acdda5d92857840fa05a84d4b031bd6f87b1fc6e.js" integrity="sha256-9OswcKB4NrrM8rj5rN2l2ShXhA+gWoTUsDG9b4ex/G4="></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.efcd9994416f8ef0e9904c0ebc34d39ab92f5fe72a60224553434d3a818b25e5.js" integrity="sha256-782ZlEFvjvDpkEwOvDTTmrkvX+cqYCJFU0NNOoGLJeU="></script><script type="text/javascript" src="/lib/algoliasearch/algoliasearch-lite.umd.min.bcee652c2a6d52152e89870be6fa7a3a76ca9ed62e0eea513b6f4f55f232613d.js" integrity="sha256-vO5lLCptUhUuiYcL5vp6OnbKntYuDupRO29PVfIyYT0="></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.e76fb8d9f216898822b92b5be7fc0b3085b9a3685b14089d64a10935e83a08c5.js" integrity="sha256-52+42fIWiYgiuStb5/wLMIW5o2hbFAidZKEJNeg6CMU="></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.21708db6d7f8e20387183d7358648065dc45f7d635370fedb24df591f68f1e6b.js" integrity="sha256-IXCNttf44gOHGD1zWGSAZdxF99Y1Nw/tsk31kfaPHms="></script><script type="text/javascript" src="/lib/sharer/sharer.min.cc31d902aa4f3fcc8bb8c81aa534a4e2103e9b11f65b9fbd5b7156e089889ceb.js" integrity="sha256-zDHZAqpPP8yLuMgapTSk4hA+mxH2W5+9W3FW4ImInOs="></script><script type="text/javascript" src="/lib/katex/katex.min.eb18207487161674e717087c317db14ac1a62dadaecccb802499ce173bfeb739.js" integrity="sha256-6xggdIcWFnTnFwh8MX2xSsGmLa2uzMuAJJnOFzv+tzk="></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.cb7f4ca60ed5dc3e258415f8c7a3b46d4a93578a52adf83011f18a7f190e7602.js" integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.52ce78fab4860d24ef22128a52ce24ca01368a9034457a565a1d3fccbab0ddbb.js" integrity="sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.5c0a121a8b490afc85860a522347aeb34fb508c6b23044e5d29f6b2194227b51.js" integrity="sha256-XAoSGotJCvyFhgpSI0eus0+1CMayMETl0p9rIZQie1E="></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"gitalk":{"admin":["CATSLAB-SDU"],"clientID":"61b42d1e8b1b0b63c612","clientSecret":"e451062bb5e1c6cb0338b7aa471e352a8d18ebf1","id":"2024-03-28T15:31:34+08:00","owner":"CATSLAB-SDU","repo":"CATSLAB-SDU.github.io","title":"连接GitHub"}},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"9DJIN648JY","algoliaIndex":"CATSLAB","algoliaSearchKey":"e0475938b166cc32e8e52c7b0c3e6071","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.d7121d72cd85153ec9d35a888cee3eb28c2700ca763f649a538f6c772d750021.js" integrity="sha256-1xIdcs2FFT7J01qIjO4+sownAMp2P2SaU49sdy11ACE="></script></body>
+</html>
