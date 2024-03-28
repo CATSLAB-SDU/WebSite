@@ -88,7 +88,7 @@ Warp 是 SM 基本执行单元，一个 Warp 包含32个并行 Thread，这32个
 
 ![CUDA 内存层次](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544289.svg "CUDA 内存层次")
 
-![存储结构示意](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544343.svg%20 "存储结构示意")
+![存储结构示意](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544343.svg "存储结构示意")
 
 **寄存器(Register)：** 寄存器对于每个线程来说都是私有的，一个核函数通常使用寄存器来保存需要频繁访问的线程私有变量。寄存器变量与核函数的生命周期相同。一旦核函数执行完毕，就不能对寄存器变量进行访问了。
 
