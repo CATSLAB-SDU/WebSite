@@ -853,7 +853,7 @@ $$</div>
 <li>$[R \times C]$,对每一行进行长度为$C$的$DFT$运算。</li>
 <li>$[R \times C]$,将矩阵进行转置。</li>
 </ol>
-<p><em><em>IDFT</em>：</em>*</p>
+<p><strong>IDFT*：</strong></p>
 <ol>
 <li>$[C \times R]$,将矩阵进行转置。</li>
 <li>$[R \times C]$,对每一行进行长度为$C$的$IDFT*$运算。</li>
@@ -871,7 +871,7 @@ $$</div>
 <li>$[R \times C]$,对每一行进行长度为$C$的$DFT$运算。</li>
 <li>$[R \times C]$,将矩阵进行转置。</li>
 </ol>
-<p><em><em>IDFT</em>:</em>*</p>
+<p><strong>IDFT*:</strong></p>
 <ol>
 <li>$[C \times R]$,将矩阵进行转置。</li>
 <li>$[R \times C]$,对每一行进行长度为$C$的$IDFT*$运算。</li>
@@ -1164,8 +1164,7 @@ A(x)\cdot B(x)=IDFT(DFT(A)\cdot DFT(B))
 $$</div>
 <p>如果使用$DIF$完成$DFT$，使用$DIT$完成$IDFT$，我们就可以省略$DIF$最后的位逆序，以及$DIT$最开始的位逆序，紧挨着的两个位逆序可以省略。</p>
 <h4 id="242-省略转置">2.4.2 省略转置</h4>
-<pre><code>  矩阵算法省略转置的原理与位逆序省略的原理相同，如果连续做$DFT$和$IDFT$，我们可以省略$DFT$最后的转置以及$IDFT$最开始的转置。
-</code></pre>
+<p>矩阵算法省略转置的原理与位逆序省略的原理相同，如果连续做$DFT$和$IDFT$，我们可以省略$DFT$最后的转置以及$IDFT$最开始的转置。</p>
 <h4 id="243-合并">2.4.3 合并</h4>
 <ol>
 <li>可以将对列之后乘旋转因子的操作合并到对列操作或者对行操作中，这样可以减少内存读写的次数。</li>
