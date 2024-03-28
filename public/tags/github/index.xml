@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Github - Tag - </title>
+        <link>https://CATSLAB-SDU.github.io/tags/github.html</link>
+        <description>Github - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>catslabsdu@gmail.com (CATS LAB)</managingEditor>
+            <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster><lastBuildDate>Thu, 28 Mar 2024 15:31:34 &#43;0800</lastBuildDate><atom:link href="https://CATSLAB-SDU.github.io/tags/github.html" rel="self" type="application/rss+xml" /><item>
+    <title>连接GitHub</title>
+    <link>https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html</link>
+    <pubDate>Thu, 28 Mar 2024 15:31:34 &#43;0800</pubDate>
+    <author>CATS LAB</author>
+    <guid>https://CATSLAB-SDU.github.io/%E8%BF%9E%E6%8E%A5github.html</guid>
+    <description><![CDATA[连接GitHub HTTP 访问不了主要是DNS被污染了，在本机DNS即可。打开如下文件将下面的内容后缀在文件中即可，修改需要管理员权限，确保自己真的]]></description>
+</item>
+</channel>
+</rss>

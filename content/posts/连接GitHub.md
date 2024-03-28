@@ -3,9 +3,10 @@ title = "连接GitHub"
 date = "2024-03-28T15:31:34+08:00"
 draft = false
 subtitle = ""
-tags = ["笔记", "笔记1"]
-categories = ["方向"]
+tags = ["github"]
+categories = ["技能"]
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
 +++
 # 连接GitHub
 
@@ -82,7 +83,7 @@ ssh-keygen -t rsa -C "your_email@example.com"
 
 去用户目录（C:\\Users\\用户）下找到.ssh目录，没有该目录，设置显示隐藏目录，在.ssh目录下找到id_rsa.pub，前往GitHub，创建一个SSH keys，把id_rsa.pub复制过来就可以。
 
-​![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530899.png)![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530228.png)​
+![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530899.png)![](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403281530228.png)​
 
 将下面内容添加到.ssh/config中,如果没有可以自己创建一个。
 

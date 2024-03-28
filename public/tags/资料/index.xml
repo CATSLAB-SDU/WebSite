@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>资料 - Tag - </title>
+        <link>https://CATSLAB-SDU.github.io/tags/%E8%B5%84%E6%96%99.html</link>
+        <description>资料 - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>catslabsdu@gmail.com (CATS LAB)</managingEditor>
+            <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster><lastBuildDate>Thu, 28 Mar 2024 15:31:34 &#43;0800</lastBuildDate><atom:link href="https://CATSLAB-SDU.github.io/tags/%E8%B5%84%E6%96%99.html" rel="self" type="application/rss+xml" /><item>
+    <title>ZKP资料目录</title>
+    <link>https://CATSLAB-SDU.github.io/zkp%E8%B5%84%E6%96%99%E7%9B%AE%E5%BD%95.html</link>
+    <pubDate>Thu, 28 Mar 2024 15:31:34 &#43;0800</pubDate>
+    <author>CATS LAB</author>
+    <guid>https://CATSLAB-SDU.github.io/zkp%E8%B5%84%E6%96%99%E7%9B%AE%E5%BD%95.html</guid>
+    <description><![CDATA[[证明、论证与零知识] Proofs, Arguments, and Zero-Knowledge.pdf Why and How zk-SNARK Works Definitive Explanation.pdf 简洁非交互零知识证明综述.pdf]]></description>
+</item>
+</channel>
+</rss>
