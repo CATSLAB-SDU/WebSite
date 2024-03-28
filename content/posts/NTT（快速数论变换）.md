@@ -3,7 +3,7 @@ title = "NTT（快速数论变换）"
 date = "2024-03-28T15:23:01+08:00"
 draft = false
 subtitle = ""
-tags = ["基础", "NTT"]
+tags = ["NTT"]
 categories = ["算法"]
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 +++

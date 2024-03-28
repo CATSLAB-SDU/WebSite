@@ -4,7 +4,7 @@ date = "2024-03-28T15:31:34+08:00"
 draft = false
 subtitle = ""
 tags = ["资料"]
-categories = ["zkp"]
+categories = ["ZKP"]
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 +++
 [[证明、论证与零知识] ](https://zhuanlan.zhihu.com/p/630841165)

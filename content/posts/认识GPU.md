@@ -3,7 +3,7 @@ title = "认识GPU"
 date = "2024-03-28T15:23:01+08:00"
 draft = false
 subtitle = ""
-tags = ["基础", "GPU 架构"]
+tags = [ "GPU 架构"]
 categories = ["CUDA"]
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 +++
@@ -227,7 +227,7 @@ Kepler架构的SMX过于庞杂，因此Maxwwll 的SMM砍掉了很多元件，将
 
 ![Hopper 架构](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061545299.png "Hopper 架构")![Hopper SM](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061546471.png "Hopper SM")
 
-​**SM 结构：**
+**SM 结构：**
 
 * 4 个 Warp Scheduler，4 个 Dispatch Unit（与 A100 一致）
 * 128 个 FP32 Core（4 * 32）（相比 A100 翻倍）
