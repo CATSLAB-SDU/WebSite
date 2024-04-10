@@ -6,6 +6,8 @@
 
 访问不了主要是DNS被污染了，在本机DNS即可。打开如下文件将下面的内容后缀在文件中即可，修改需要管理员权限，确保自己真的修改成功了`C:\Windows\System32\drivers\etc\hosts`​。在 CMD 窗口输入：`ipconfig /flushdns`​
 
+linux则是修改`/etc/hosts` 保存可以执行`sudo nscd restart`确保其生效。
+
 下面的内容可以在下面的网站中找到最新的：
 
 [hosts · frankwuzp/github-host - Gitee.com](https://gitee.com/frankwuzp/github-host/blob/main/hosts)
