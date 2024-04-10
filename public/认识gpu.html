@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/CATSLAB-SDU.github.io\/%E8%AE%A4%E8%AF%86gpu.html"
-        },"image": ["https:\/\/CATSLAB-SDU.github.io\/favicon-32x32.png"],"genre": "posts","keywords": "GPU 架构","wordcount":  6996 ,
+        },"image": ["https:\/\/CATSLAB-SDU.github.io\/favicon-32x32.png"],"genre": "posts","keywords": "GPU 架构","wordcount":  6994 ,
         "url": "https:\/\/CATSLAB-SDU.github.io\/%E8%AE%A4%E8%AF%86gpu.html","datePublished": "2024-03-28T15:23:01+08:00","dateModified": "2024-03-28T15:23:01+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -113,7 +113,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">认识GPU</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>CATS LAB</a></span>&nbsp;<span class="post-category">included in <a href="/categories/cuda.html"><i class="far fa-folder fa-fw" aria-hidden="true"></i>CUDA</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-03-28">2024-03-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;6996 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-03-28">2024-03-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;6994 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;14 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -203,16 +203,16 @@
 <h4 id="121基本概念解释">1.2.1基本概念解释</h4>
 <p>GPU的设计目标是最大化吞吐量（Throughout）和并行度（Parallelism）。而CPU更关心延迟（Latency）和并发（concurrency）。于是GPU采用了SIMT架构，单核CPU通常采用SIMD架构，多核CPU则通常采用MIMD架构。</p>
 <p>CPU旨在以尽可能快的速度执行线程，并且可以并行执行几十个这些线程。而GPU试图通过并行执行数千个线程从而分摊时延以实现更高的吞吐量。 GPU专门用于高度并行计算，因此设计时更多的晶体管用于数据处理而不是数据缓存和流程控制。</p>
-<p><figure><a class="lightgallery" href="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544221.svg" title="多核CPU和GPU" data-thumbnail="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544221.svg" data-sub-html="<h2>多核CPU和GPU</h2><p>多核CPU和GPU</p>">
+<p><figure><a class="lightgallery" href="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202404101935078.svg" title="多核CPU和GPU" data-thumbnail="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202404101935078.svg" data-sub-html="<h2>多核CPU和GPU</h2><p>多核CPU和GPU</p>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
-            data-src="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544221.svg"
-            data-srcset="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544221.svg, https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544221.svg 1.5x, https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544221.svg 2x"
+            data-src="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202404101935078.svg"
+            data-srcset="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202404101935078.svg, https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202404101935078.svg 1.5x, https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202404101935078.svg 2x"
             data-sizes="auto"
-            alt="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544221.svg" />
+            alt="https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202404101935078.svg" />
     </a><figcaption class="image-caption">多核CPU和GPU</figcaption>
-    </figure>​​<strong>吞吐量：</strong> 单位时间内能够完成的操作。</p>
+    </figure><strong>吞吐量：</strong> 单位时间内能够完成的操作。</p>
 <p><strong>延迟：</strong> 完成单项任务所消耗的时间。</p>
 <p><strong>并行：</strong> 同时处理多个任务，任务之间存在干扰。</p>
 <p><strong>并发：</strong> 一段时间内处理多个任务，任务之间可能互相干扰。</p>

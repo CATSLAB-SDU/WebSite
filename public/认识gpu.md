@@ -32,7 +32,7 @@ GPU的设计目标是最大化吞吐量（Throughout）和并行度（Parallelis
 
 CPU旨在以尽可能快的速度执行线程，并且可以并行执行几十个这些线程。而GPU试图通过并行执行数千个线程从而分摊时延以实现更高的吞吐量。 GPU专门用于高度并行计算，因此设计时更多的晶体管用于数据处理而不是数据缓存和流程控制。
 
-![多核CPU和GPU](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202403061544221.svg "多核CPU和GPU")​​**吞吐量：** 单位时间内能够完成的操作。
+![多核CPU和GPU](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202404101935078.svg "多核CPU和GPU")**吞吐量：** 单位时间内能够完成的操作。
 
 **延迟：** 完成单项任务所消耗的时间。
 
