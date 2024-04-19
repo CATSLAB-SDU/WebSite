@@ -1,40 +1,42 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Categories - Category - </title>
-        <link>https://CATSLAB-SDU.github.io/categories.html</link>
-        <description>Categories - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>catslabsdu@gmail.com (CATS LAB)</managingEditor>
-            <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster><lastBuildDate>Thu, 28 Mar 2024 15:31:34 &#43;0800</lastBuildDate><atom:link href="https://CATSLAB-SDU.github.io/categories.html" rel="self" type="application/rss+xml" /><item>
-    <title>ZKP</title>
-    <link>https://CATSLAB-SDU.github.io/categories/zkp.html</link>
-    <pubDate>Thu, 28 Mar 2024 15:31:34 &#43;0800</pubDate>
-    <author>CATS LAB</author>
-    <guid>https://CATSLAB-SDU.github.io/categories/zkp.html</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>技能</title>
-    <link>https://CATSLAB-SDU.github.io/categories/%E6%8A%80%E8%83%BD.html</link>
-    <pubDate>Thu, 28 Mar 2024 15:31:34 &#43;0800</pubDate>
-    <author>CATS LAB</author>
-    <guid>https://CATSLAB-SDU.github.io/categories/%E6%8A%80%E8%83%BD.html</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>CUDA</title>
-    <link>https://CATSLAB-SDU.github.io/categories/cuda.html</link>
-    <pubDate>Thu, 28 Mar 2024 15:23:01 &#43;0800</pubDate>
-    <author>CATS LAB</author>
-    <guid>https://CATSLAB-SDU.github.io/categories/cuda.html</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>算法</title>
-    <link>https://CATSLAB-SDU.github.io/categories/%E7%AE%97%E6%B3%95.html</link>
-    <pubDate>Thu, 28 Mar 2024 15:23:01 &#43;0800</pubDate>
-    <author>CATS LAB</author>
-    <guid>https://CATSLAB-SDU.github.io/categories/%E7%AE%97%E6%B3%95.html</guid>
-    <description><![CDATA[]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on </title>
+    <link>https://CATSLAB-SDU.github.io/categories.html</link>
+    <description>Recent content in Categories on </description>
+    <generator>Hugo 0.125.1</generator>
+    <language>zh-CN</language>
+    <managingEditor>catslabsdu@gmail.com (CATS LAB)</managingEditor>
+    <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster>
+    <lastBuildDate>Fri, 19 Apr 2024 16:30:41 +0800</lastBuildDate>
+    <atom:link href="https://CATSLAB-SDU.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CUDA</title>
+      <link>https://CATSLAB-SDU.github.io/categories/cuda.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>catslabsdu@gmail.com (CATS LAB)</author>
+      <guid>https://CATSLAB-SDU.github.io/categories/cuda.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ZKP</title>
+      <link>https://CATSLAB-SDU.github.io/categories/zkp.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>catslabsdu@gmail.com (CATS LAB)</author>
+      <guid>https://CATSLAB-SDU.github.io/categories/zkp.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>技能</title>
+      <link>https://CATSLAB-SDU.github.io/categories/%E6%8A%80%E8%83%BD.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>catslabsdu@gmail.com (CATS LAB)</author>
+      <guid>https://CATSLAB-SDU.github.io/categories/%E6%8A%80%E8%83%BD.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>算法</title>
+      <link>https://CATSLAB-SDU.github.io/categories/%E7%AE%97%E6%B3%95.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>catslabsdu@gmail.com (CATS LAB)</author>
+      <guid>https://CATSLAB-SDU.github.io/categories/%E7%AE%97%E6%B3%95.html</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>

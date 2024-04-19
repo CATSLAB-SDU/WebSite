@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CUDA on </title>
-    <link>https://CATSLAB-SDU.github.io/categories/cuda.html</link>
-    <description>Recent content in CUDA on </description>
+    <title>CUDA调试 on </title>
+    <link>https://CATSLAB-SDU.github.io/tags/cuda%E8%B0%83%E8%AF%95.html</link>
+    <description>Recent content in CUDA调试 on </description>
     <generator>Hugo 0.125.1</generator>
     <language>zh-CN</language>
     <managingEditor>catslabsdu@gmail.com (CATS LAB)</managingEditor>
     <webMaster>catslabsdu@gmail.com (CATS LAB)</webMaster>
     <lastBuildDate>Fri, 19 Apr 2024 16:30:41 +0800</lastBuildDate>
-    <atom:link href="https://CATSLAB-SDU.github.io/categories/cuda/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://CATSLAB-SDU.github.io/tags/cuda%E8%B0%83%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>调试过程focus on具体线程</title>
       <link>https://CATSLAB-SDU.github.io/%E8%B0%83%E8%AF%95%E8%BF%87%E7%A8%8Bfocus-on%E5%85%B7%E4%BD%93%E7%BA%BF%E7%A8%8B.html</link>
       <pubDate>Fri, 19 Apr 2024 16:30:41 +0800</pubDate><author>catslabsdu@gmail.com (CATS LAB)</author>
       <guid>https://CATSLAB-SDU.github.io/%E8%B0%83%E8%AF%95%E8%BF%87%E7%A8%8Bfocus-on%E5%85%B7%E4%BD%93%E7%BA%BF%E7%A8%8B.html</guid>
       <description>如何在调试的时候指定一个线程进行调试 date：20240419 author：bufanzhen base vscode cuda launch STEP 第一步开启调试 第二部：单击右下角CU</description>
-    </item>
-    <item>
-      <title>认识GPU</title>
-      <link>https://CATSLAB-SDU.github.io/%E8%AE%A4%E8%AF%86gpu.html</link>
-      <pubDate>Thu, 28 Mar 2024 15:23:01 +0800</pubDate><author>catslabsdu@gmail.com (CATS LAB)</author>
-      <guid>https://CATSLAB-SDU.github.io/%E8%AE%A4%E8%AF%86gpu.html</guid>
-      <description>1 GPU简单介绍 GPU(Graphics Processing Unit)也叫做图形处理单元，是一种专用电子电路，最初设计使用来加速计算机图形处理，但后续因其并行结构非常适合与并行计算</description>
     </item>
   </channel>
 </rss>
