@@ -1,13 +1,5 @@
-+++
-title = "调试过程focus on具体线程"
-date = "2024-04-19T16:48:45+08:00"
-draft = false
-subtitle = ""
-tags = ["调试", "CUDA"]
-categories = ["CUDA"]
-license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+# 调试过程focus on具体线程
 
-+++
 # 如何在调试的时候指定一个线程进行调试
 
 # base
@@ -42,6 +34,7 @@ cuda也可以省略
 ```sh
 thread (1, 0, 0)
 ```
+
 
 
 
