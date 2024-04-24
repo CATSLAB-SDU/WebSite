@@ -893,8 +893,7 @@ jobs:
 登录github账号：
 
 ```powershell
-user：catslabsdu@gmail.com
-password：catlab200.
+组内的找管理员就行
 ```
 
 在website仓库加入添加自己的github为协作账号，并在自己github账号绑定的邮件中同意。
@@ -940,6 +939,8 @@ git push -u origin main
 
 markdown中的图片需要上传到网络图床。下载PicGo这里推荐山东大学的镜像网站：[v2.3.1 (sdu.edu.cn)](https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo/v2.3.1/)
 
+token需要自己在github申请用旧的那个最好设置个无限期的。
+
 进行图床设置：
 
 ```powershell
@@ -947,7 +948,7 @@ markdown中的图片需要上传到网络图床。下载PicGo这里推荐山东�
 
 分支：main
 
-token：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
+token：组内的找管理员要
 
 存储路径：
 
