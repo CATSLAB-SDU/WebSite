@@ -324,7 +324,7 @@ P_o(\omega_{\frac{n}{2}}^{k}) &= \frac{1}{2\omega_{n}^{k}}(P(\omega_{n}^{k}) - P
 \end{align}
 $$</div>
 
-![资源 11](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202402191954666.svg%20 "图7 GS蝶形操作")
+![资源 11](https://cdn.jsdelivr.net/gh/yinxiangkai/ImageBed@main/202402191954666.svg "图7 GS蝶形操作")
 
 #### 1.3.2 $FFT$ 迭代实现
 

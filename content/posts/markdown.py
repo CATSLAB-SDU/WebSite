@@ -4,17 +4,33 @@ import glob
 from datetime import datetime
 
 def wrap_math_expressions_with_div(content):
-    # 直接将整个$$...$$格式的数学表达式包装在<div>标签中
+    # 处理$$...$$格式的数学表达式
     def wrap_with_div(match):
         # 获取匹配到的整个数学表达式
         math_expr = match.group(0)
+        # 去除数学表达式中的空行
+        math_expr = re.sub(r'\n\s*\n', '\n', math_expr)
         # 将整个数学表达式包装在<div>标签中
         return f'<div>{math_expr}</div>'
     
-    # 使用正则表达式匹配整个$$...$$格式的数学表达式，并调用wrap_with_div函数处理
-    wrapped_content = re.sub(r'(\$\$.*?\$\$)', wrap_with_div, content, flags=re.DOTALL)
+    # 使用正则表达式匹配$$...$$格式的数学表达式，并调用wrap_with_div函数处理
+    content = re.sub(r'(\$\$.*?\$\$)', wrap_with_div, content, flags=re.DOTALL)
     
-    return wrapped_content
+    return content
+
+def escape_special_characters_in_inline_math(content):
+    # 处理$...$格式的数学表达式，在^、_和*前面加上\
+    def escape_special_characters(match):
+        # 获取匹配到的整个数学表达式
+        math_expr = match.group(0)
+        # 在^、_和*前面加上\
+        math_expr = re.sub(r'(?<!\\)([\^_\*])', r'\\\1', math_expr)
+        return math_expr
+    
+    # 使用正则表达式匹配$...$格式的数学表达式，并调用escape_special_characters函数处理
+    content = re.sub(r'(\$.*?\$)', escape_special_characters, content, flags=re.DOTALL)
+    
+    return content
 
 def process_math_expressions(md_file_path):
     title = os.path.splitext(os.path.basename(md_file_path))[0]
@@ -24,7 +40,6 @@ title = "{title}"
 date = "{current_time}+08:00"
 draft = false
 subtitle = ""
-authors=["作者"]
 tags = ["笔记", "笔记1"]
 categories = ["方向"]
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
@@ -43,6 +58,9 @@ license = '<a rel="license external nofollow noopener noreferrer" href="https://
     
     # 将$$...$$格式的数学表达式包装在<div>标签中
     content = wrap_math_expressions_with_div(content)
+    
+    # 在$...$格式的数学表达式中，在^、_和*前面加上\
+    content = escape_special_characters_in_inline_math(content)
     
     with open(md_file_path, 'w', encoding='utf-8') as file:
         file.write(content)
